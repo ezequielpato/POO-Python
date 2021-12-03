@@ -1,5 +1,5 @@
 import unittest
-from surtidor import Surtidor
+from Clase_2._01_surtidor import Surtidor
 
 class TestSurtidor(unittest.TestCase):
     def setUp(self) -> None:

@@ -1,9 +1,9 @@
 """
-    Ejercicio 6: 
+    Ejercicio 6:
         Modelar la clase Banco:
             - Un banco puede transferir un monto de una cuenta a otra cuenta.
 """
-from caja_de_ahorros import CajaDeAhorro as Caja
+from Clase_1._01_caja_de_ahorros import CajaDeAhorro as Caja
 
 class Banco(object):
     """

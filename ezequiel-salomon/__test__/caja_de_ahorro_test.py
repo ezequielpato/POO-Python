@@ -1,5 +1,5 @@
 import unittest
-from caja_de_ahorro import CajaDeAhorro
+from Clase_1._01_caja_de_ahorros import CajaDeAhorro
 
 class TestCajaDeAhorro(unittest.TestCase):
     def setUp(self) -> None:

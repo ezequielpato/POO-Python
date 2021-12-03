@@ -1,6 +1,6 @@
 import unittest
-from banco import Banco
-from caja_de_ahorro import CajaDeAhorro as Caja
+from Clase_1._06_banco import Banco
+from Clase_1._01_caja_de_ahorros import CajaDeAhorro as Caja
 
 class TestBanco(unittest.TestCase):
     def setUp(self) -> None:
