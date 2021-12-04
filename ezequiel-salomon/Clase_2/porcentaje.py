@@ -8,7 +8,7 @@
         Defina los tests de unidad que considere necesarios para esta clase.
 """
 
-from exeption import DividendoNoPuedeSerCero
+from Clase_2.exeption_porcentaje import DividendoNoPuedeSerCero
 
 class Porcentaje(object):
     """
@@ -21,9 +21,10 @@ class Porcentaje(object):
         self.__valor = unNumero
 
     @property
-    def valor(self): return self.__valor
+    def valor(self) -> float: return self.__valor
 
     def aplicarA(self, unNumero) -> float:
+        """ Número al cual se le aplicará el porcentaje """
         if unNumero == 0:
             raise DividendoNoPuedeSerCero
         else:

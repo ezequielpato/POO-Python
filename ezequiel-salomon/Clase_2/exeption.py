@@ -1,2 +1,0 @@
-class DividendoNoPuedeSerCero(Exception):
-    pass
