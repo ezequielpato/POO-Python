@@ -26,14 +26,5 @@ class TestEstacionDeServicio(unittest.TestCase):
         """ pass """
         self.assertEqual(self.estacion.cantidadDeSurtidores(), 0)
 
-
-
-    """ Estacion con surtidores
-        0
-        agrega
-        x
-    """
-
-
 if  __name__ == '__main__':
     unittest.main()

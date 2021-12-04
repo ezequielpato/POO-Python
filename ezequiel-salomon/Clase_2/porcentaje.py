@@ -8,7 +8,7 @@
         Defina los tests de unidad que considere necesarios para esta clase.
 """
 
-from exeption_porcentaje import DividendoNoPuedeSerCero
+from exeption_porcentaje import ImposibleDividirPorCero
 
 class Porcentaje(object):
     """
@@ -26,11 +26,11 @@ class Porcentaje(object):
     def aplicarA(self, unNumero) -> float:
         """ Número al cual se le aplicará el porcentaje """
         if unNumero == 0:
-            raise DividendoNoPuedeSerCero
+            raise ImposibleDividirPorCero
         else:
             return unNumero * self.valor / 100
 
 if __name__ == "__main__":
     porcentaje = Porcentaje(45)
-    resultado = porcentaje.aplicarA(0)
+    resultado = porcentaje.aplicarA(100)
     print(f' Representa el % {int(resultado)}')

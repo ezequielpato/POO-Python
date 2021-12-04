@@ -21,7 +21,7 @@ class Surtidor():
     @property
     def cargaMax(self): return self.__CARGAMAX
 
-    def estaVacio(self) -> bool: 
+    def estaVacio(self) -> bool:
         return self.carga == 0
 
     def cargaFaltante(self) -> int:
@@ -29,8 +29,12 @@ class Surtidor():
         return self.cargaMax - self.carga
 
     def cargar(self, una_carga:int) -> None:
-        """ Le agrega una carga al surtidor """ 
+        """ Le agrega una carga al surtidor """
         if una_carga + self.carga <= self.cargaMax:
             self.__carga += una_carga
         else:
-            raise ImposibleRealizarUnaCarga   
+            raise ImposibleRealizarUnaCarga
+
+
+if __name__ == "__main__":
+    pass
