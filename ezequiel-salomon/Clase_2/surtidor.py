@@ -9,7 +9,7 @@
             ✅ Puede recibir una carga
 """
 
-from Clase_2.exepcion_surtidor import ImposibleRealizarUnaCarga
+from exepcion_surtidor import ImposibleRealizarUnaCarga
 
 class Surtidor():
     def __init__(self, carga_max:int) -> None:

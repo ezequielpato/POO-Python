@@ -8,7 +8,7 @@
         Defina los tests de unidad que considere necesarios para esta clase.
 """
 
-from Clase_2.exeption_porcentaje import DividendoNoPuedeSerCero
+from exeption_porcentaje import DividendoNoPuedeSerCero
 
 class Porcentaje(object):
     """

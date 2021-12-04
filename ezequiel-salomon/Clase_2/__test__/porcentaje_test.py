@@ -1,7 +1,7 @@
 import unittest
 
-from Clase_2.exeption_porcentaje import DividendoNoPuedeSerCero
-from Clase_2.porcentaje import Porcentaje
+from exeption_porcentaje import DividendoNoPuedeSerCero
+from porcentaje import Porcentaje
 
 class TestPorcentaje(unittest.TestCase):
     def setUp(self) -> None:

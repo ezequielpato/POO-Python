@@ -1,7 +1,7 @@
 import unittest
 
-from Clase_2.estacion_de_servicio import Estacion
-from Clase_2.surtidor import Surtidor
+from estacion_de_servicio import Estacion
+from surtidor import Surtidor
 
 class TestEstacionDeServicio(unittest.TestCase):
     def setUp(self) -> None:

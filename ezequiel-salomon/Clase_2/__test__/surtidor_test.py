@@ -1,7 +1,7 @@
 import unittest
 
-from Clase_2.exepcion_surtidor import ImposibleRealizarUnaCarga
-from Clase_2.surtidor import Surtidor
+from exepcion_surtidor import ImposibleRealizarUnaCarga
+from surtidor import Surtidor
 
 class TestSurtidor(unittest.TestCase):
     def setUp(self) -> None:
