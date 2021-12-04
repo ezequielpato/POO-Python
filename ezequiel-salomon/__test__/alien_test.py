@@ -1,5 +1,5 @@
 import unittest
-from alien import Alien
+from Clase_1.alien import Alien
 
 class TestAlien(unittest.TestCase):
   def setUp(self) -> None:
@@ -56,3 +56,7 @@ class TestAlien(unittest.TestCase):
     self.alien.reponerse()
 
     self.assertEqual(self.alien.energia,5)
+
+
+if __name__ == "__main__":
+    unittest.main()

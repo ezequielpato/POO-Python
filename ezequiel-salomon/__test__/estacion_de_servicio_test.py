@@ -1,6 +1,6 @@
 import unittest
 
-from estacion_de_servicio import Estacion
+from Clase_1.es import Estacion
 from surtidor import Surtidor
 
 class TestEstacionDeServicio(unittest.TestCase):
