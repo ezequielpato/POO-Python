@@ -1,0 +1,57 @@
+Test
+
+-> Automaticos: al ejecutarse ya me indican si pasan o no
+    no es necesario realizar una inspección a mano
+
+-> Repetibles: Se deben poder ejecutar N veces, dando el
+    mismo resultado
+
+-> Independientes: no importa el orden en el que se ejecuten.
+    No deben depender de factores externos.
+
+-> Bien pensados: deben cubrir los casos claves.
+
+
+Partes de un test:
+    -> Identificación del mismo
+    -> Setup: preparación del caso a testear
+    -> Precondición (opcional): comprobación base
+    -> Ejercitación del comportamiento: accion a testear
+    -> Post condición: objetivo del test
+
+
+Casos que quedan fuera del testing: 
+    - Constructores 
+    - Guetters 
+    - Setters
+
+Como framework para nuestra suite de test vamos a utilizar 
+ https://docs.python.org/3/library/unittest.html
+
+ https://ellibrodepython.com/python-testing
+
+
+Veamos dentro de la carpeta test la estructura básica de un test unitario 
+en el archivo contador_test.py
+
+
+Nota: 
+
+    unittest nos permite mediante setUp() definir objetos 
+    accesibles a toda la clase en la que se esta ejecutando. 
+
+    Ejemplo:
+
+        import unittest
+        from caja_de_ahorro import CajaDeAhorro
+
+        class TestMiObjeto(unittest.TestCase):
+            # ----- setUp ------ #
+            def setUp(self):
+                self.cuenta = CajaDeAhorro()
+
+            test_accesoAObjeto(self):
+                self.assertTrue(hasattr(self.cuenta, 'saldo'))
+
+
+    De esta manera podemos reutilizar nustras intancias y reducir codigo.
